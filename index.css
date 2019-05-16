@@ -1,29 +1,15 @@
+/* Rethink whole color scheme.  Look into flex-boxing each section */
+
 * {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
+  line-height: 1.5;
 }
+
+
 
 body{
   text-align: center;
-}
-
-header {
-  min-height: 300px;
-  padding:10% 0;
-  background-color:white;
-  /* #EE6C4D; */
-  margin: 0 2%;
-}
-
-h1 {
-  font-size: 50px;
-  font-family: 'Oleo Script', cursive;
-}
-
-#sketch {
-  height: auto;
-  width: 50%;
-  border-radius: 20%;
 }
 
 nav{
@@ -42,16 +28,49 @@ nav{
   display: inline-block;
 }
 
+header {
+  min-height: 300px;
+  padding: 8% 0 8% 0;
+  background-color:#EE6C4D;;
+  /*  */
+  margin: 0 2%;
+}
 
+h1 {
+  font-size: 50px;
+  font-family: 'Oleo Script', cursive;
+  margin: 0.5em 0;
+}
+
+#sketch {
+  height: auto;
+  width: 50%;
+  border-radius: 20%;
+}
+
+.quote{
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: 'Oleo Script', cursive;
+}
 
 section {
   min-height: 250px;
   margin: 0 2%;
-  padding: 12% 0;
+  padding: 8% 0;
   background-color: #E0FBFC;
 }
 
+#about-me {
+  width:94%;
+  margin-left: 3%;
+}
 
+.logo{
+  width: 12%;
+  margin:10% 5%;
+  height: auto;
+}
 
 section:nth-of-type(even) {
   background-color:#98C1D9;
