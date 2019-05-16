@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -8,29 +9,52 @@ body{
 
 header {
   min-height: 300px;
-  padding:15% 0;
+  padding:10% 0;
+  background-color:white;
+  /* #EE6C4D; */
+  margin: 0 2%;
 }
 
-section {
-  min-height: 250px;
-  margin: 0 2%;
-  padding: 12% 0;
-  background-color: lightgray;
+h1 {
+  font-size: 50px;
+  font-family: 'Oleo Script', cursive;
+}
+
+#sketch {
+  height: auto;
+  width: 50%;
+  border-radius: 20%;
 }
 
 nav{
-  height: 20px;
+  height: 35px;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 20;
-  background-color: black;
-  color: white;  
+  padding: 3% 0;
+  background-color: #293241;
+  color: #FFFFFF;  
 }
 
+#menu{
+  display: inline-block;
+}
+
+
+
+section {
+  min-height: 250px;
+  margin: 0 2%;
+  padding: 12% 0;
+  background-color: #E0FBFC;
+}
+
+
+
 section:nth-of-type(even) {
-  background-color:gray;
+  background-color:#98C1D9;
   color: white;
 }
 
