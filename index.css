@@ -31,7 +31,7 @@ nav{
 header {
   min-height: 250px;
   padding: 8% 0 8% 0;
-  background-color:#EE6C4D;;
+  background-color:#EE6C4D;
   /*  */
   margin: 0 2%;
 }
@@ -79,6 +79,15 @@ section {
   height: 100px;
   align-content: center;
 }
+
+.tall-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  height: 200px;
+  align-content: center;
+}
+
 .center-row {
   display: flex;
   flex-flow: row wrap;
@@ -91,6 +100,35 @@ section {
   flex-flow: column;
   justify-content: center;
   align-content: space-around;
+}
+
+.project-column {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-content: space-around;
+}
+
+.project-title{
+  margin: 10px 0;
+}
+
+.project-description {
+  width: 300px;
+  height: auto;
+  border: 1px solid black;
+  background-color: white;
+}
+
+#project-section .short-row{
+  height:40px;
+}
+
+.project-button {
+  padding: 3px 5px;
+  border: 1px solid black;
+  background-color: #EE6C4D;
+  border-radius: 20%;
 }
 
 .logo{
@@ -127,6 +165,13 @@ section {
 .section-title {
   font-size:24px;
   padding: 5px 5px;
+}
+
+.project-screenshot {
+  width: 300px;
+  height:auto;
+  border-radius: 5%;
+
 }
 
 
