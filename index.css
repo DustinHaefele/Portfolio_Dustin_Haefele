@@ -29,7 +29,7 @@ nav{
 }
 
 header {
-  min-height: 300px;
+  min-height: 250px;
   padding: 8% 0 8% 0;
   background-color:#EE6C4D;;
   /*  */
@@ -55,14 +55,15 @@ h1 {
 
 .quote{
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Oleo Script', cursive;
+  padding: 0 3px;
 }
 
 section {
   min-height: 250px;
-  margin: 0 2%;
-  padding: 8% 0;
+  margin: 4% 2%;
+  padding: 4% 0;
   background-color: #E0FBFC;
 }
 
@@ -71,18 +72,71 @@ section {
   margin-left: 3%;
 }
 
-.logo{
-  width: 12%;
-  margin:10% 5%;
-  height: auto;
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  height: 100px;
+  align-content: center;
 }
+.center-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.column {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.logo{
+  width: 50px; 
+  height: 50px;
+}
+
+.main-contact-logo {
+  margin:5px 8px;
+  font-size: 40px;
+}
+
+.contact-list{
+  padding: 0 0 0 0;
+}
+
+.contact-link {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 3px 0;
+}
+
+.contact-link:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.contact-logo{
+  padding: 0 3px 0 0;
+}
+
+.section-title {
+  font-size:24px;
+  padding: 5px 5px;
+}
+
+
 
 section:nth-of-type(even) {
   background-color:#98C1D9;
-  color: white;
+  color: black;
 }
 
 footer {
-  background-color: lightgray;
-  margin: 0 2%;
+  
+  /* margin: 0 2%; */
 }
