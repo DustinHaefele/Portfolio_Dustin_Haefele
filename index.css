@@ -31,8 +31,9 @@ nav{
 header {
   min-height: 250px;
   padding: 8% 0 8% 0;
-  background-color:#EE6C4D;
-  /*  */
+  background-color:rgba(255, 104, 107);/*#EE6C4D; */
+  border: 1px groove rgba(255, 104, 107,.5);
+  box-shadow: 0 5px 20px rgba(121, 127, 127, .7);
   margin: 0 2%;
 }
 
@@ -55,16 +56,22 @@ h1 {
 
 .quote{
   margin-top: 10px;
+  padding: 0 3px;
+}
+
+.quote p{
   font-size: 16px;
   font-family: 'Oleo Script', cursive;
-  padding: 0 3px;
 }
 
 section {
   min-height: 250px;
-  margin: 4% 2%;
+  margin: 5% 2%;
   padding: 4% 0;
-  background-color: #E0FBFC;
+  background-color: #ffffff;/* #E0FBFC; */
+  border: 1px groove rgba(165, 255, 214,.5);
+  box-shadow: 0 5px 20px rgba(165, 255, 214, .39);
+
 }
 
 #about-me {
@@ -77,14 +84,6 @@ section {
   flex-flow: row wrap;
   justify-content: space-around;
   height: 100px;
-  align-content: center;
-}
-
-.tall-row {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  height: 200px;
   align-content: center;
 }
 
@@ -121,7 +120,11 @@ section {
 }
 
 #project-section .short-row{
+  display: flex;
+  flex-flow: row wrap;
   height:40px;
+  justify-content: space-around;
+  align-content: center;
 }
 
 .project-button {
@@ -129,6 +132,10 @@ section {
   border: 1px solid black;
   background-color: #EE6C4D;
   border-radius: 20%;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .logo{
@@ -163,6 +170,7 @@ section {
 }
 
 .section-title {
+  margin: 10px 0;
   font-size:24px;
   padding: 5px 5px;
 }
@@ -174,12 +182,11 @@ section {
 
 }
 
-
-
-section:nth-of-type(even) {
-  background-color:#98C1D9;
+ section:nth-of-type(even) {
+  border: 1px groove rgba(255,166,158,.5);
+  box-shadow: 0 5px 20px rgba(255, 166, 158, .39);
   color: black;
-}
+} 
 
 footer {
   
