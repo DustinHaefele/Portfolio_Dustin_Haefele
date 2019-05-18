@@ -6,6 +6,10 @@
   line-height: 1.5;
 }
 
+.hidden {
+  display: none;
+}
+
 /* General */
 
 body{
@@ -17,17 +21,46 @@ body{
 nav{
   height: 35px;
   position: fixed;
+  display: flex;
   top: 0;
   right: 0;
   left: 0;
   z-index: 20;
-  padding: 3% 0;
+  /* padding: 3% 0; */
   background-color: #293241;
   color: #FFFFFF;  
+  align-content: center;
+  justify-content: space-between;
 }
 
-#menu{
-  display: inline-block;
+.nav-drop{
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 800px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  padding: 20px 0;
+  font-size: 24px;
+  font-family: 'graduate', cursive;
+}
+
+.nav-link {
+  font-family: 'graduate', cursive;
+  color: white;
+  text-decoration: none;
+}
+
+.menu{
+  padding: 6px 5px;
+  display: block;
+  height: 35px;
+  align-content: center;
 }
 
 /* Hero */
