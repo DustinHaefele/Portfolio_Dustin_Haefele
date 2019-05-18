@@ -14,26 +14,37 @@
   <nav role='navigation' class ="nav">
       <div class='menu'>Dustin Haefele</div><div class='menu' id='menu-icon'> &#9776;</div>
   </nav>
-  <div class='nav-drop nav hidden'>
-      <ul class='nav-list'>
-        <li><a class="nav-link" href="#about-me-section">About Me</a></li>
-        <li><a class="nav-link" href="#project-section">Projects</a></li>
-        <li><a class="nav-link" href="#skills-section">Skills</a></li>
-        <li><a class="nav-link" href="#contact-me-section">Contact Me</a></li>
-      </ul>
+    <div class='nav-drop nav hidden'>
+        <ul class='nav-list'>
+          <li><a class="nav-link" href="#about-me-section">About Me</a></li>
+          <li><a class="nav-link" href="#project-section">Projects</a></li>
+          <li><a class="nav-link" href="#skills-section">Skills</a></li>
+          <li><a class="nav-link" href="#contact-me-section">Contact Me</a></li>
+        </ul>
     </div>
+
+
   <header role='banner' class='hero'>
-    <h1>Dustin Haefele:</h1>
-    <h2 class='subtitle'>Former Chemical Engineer, </br>Current Web Developer.</h2>
-    <img src="./img/site-sketch.jpg" alt="Me and my pup" id ="sketch">
+  <div class= 'row hero-row'>
+      <div class='hero-name _50'>
+        <h1>Dustin Haefele:</h1>
+        <h2 class='subtitle'>Former Chemical Engineer, </br>Current Web Developer.</h2>
+      </div>
+      <div class='hero-image _50'>
+        <img src="./img/site-sketch.jpg" alt="Me and my pup" id ="sketch">
+      </div>
+    </div>
     <div class='quote'><p>"Pursue the things you love doing and then 
       do them so well that people can't take their eyes off of you." </br>-Maya Angelou</p></div>
+    
   </header>
 
   <section id = 'about-me-section' class="category" role="region">
-    <h2 class="section-title">ABOUT ME</h2>
-
-    <p id = 'about-me' >Hey, I’m Dustin, an aspiring web developer currently based in Athens, Georgia.  
+    <div class = 'row'>
+      <h2 class="section-title">ABOUT ME</h2>
+    </div>
+    <div class= 'row'>
+      <p id = 'about-me' >Hey, I’m Dustin, an aspiring web developer currently based in Athens, Georgia.  
       I love coming up with efficient solutions to complex problems, traveling the world, 
       good puns, and Dvorak keyboards. </br></br>
 
@@ -50,12 +61,12 @@
         I was doing so much that I decided to make a leap and enroll in a Fullstack Development program through Thinkful.  
         I am currently working through that program and seeking a full-time development position to use the skills I already have and 
         continue to learn so I can do my part in making the world a little better place to live in one application at a time. 
-        </p>
-
+      </p>
+    </div>
   </section>
  
   <!-- Need to learn how to do a side scrolling section. -->
-  <section class="category column" id="project-section" role="region">
+  <section class="category" id="project-section" role="region">
      
         <div class = 'row'>
           <h2 class = "section-title">PROJECTS</h2>
@@ -72,55 +83,54 @@
           <a href="#" class="project-code"><button class='project-button'>See Code</button></a>
         </div>
         <div class="row">
-          <p class='project-description'>A bookmark storage app that allows users to save all their bookmarks along with Name, Description and Rating.  
+          <p class='project-description'>A bookmark storage app that allows users to save all their bookmarks along with name, description and rating.  
             The user can also filter the list by a minimum rating.</p>
         </div>
       </div>
   </section>
 
-  
-  <section class="category" id ="skills-section" role="region">
-    <div class ="row">
-      <h2 class = "section-title">Things I can help with</h2>
-    </div>
-    <div class ="row">
-      <img src="./img/html.svg" alt="Me and my pup" class ="logo">
-      <img src="./img/css3.svg" alt="Me and my pup" class ="logo">
-      <img src="./img/js.svg" alt="Me and my pup" class ="logo">
-      <img src="./img/jquery.svg" alt="Me and my pup" class ="logo">
-      <img src="./img/github.svg" alt="Me and my pup" class ="logo">
-    </div>
-  </section>
-  
-  
-  <section class="category" id = 'contact-me-section' role="region">
-    <div class='column'> 
-      <ul class='contact-list'>
-        <li class='row center'>
-          <i class="fas fa-mail-bulk main-contact-logo"></i>
-          <h2 id="contact-section-title">Contact Me</h2>
-        </li>
-        <li class='row center'>
-          <a href="#" class='contact-link'>
-            <i class="fas fa-map-marked contact-logo"></i>
-            <span>Athens, GA</span>
-          </a>
-        </li>
-        <li class='row center'>
-          <a href="#" class='contact-link'>
-            <i class="far fa-paper-plane contact-logo"></i>
-            <span>Dustin.Haefele@gmail.com</span>
-          </a>
-        </li>
-      </ul> 
-    </div>
-    <div class= row>
-      <a href="https://www.linkedin.com/in/dustin-haefele-1921b474/" class='contact-link'><img src="./img/linkdin.svg" alt="linkdin-logo" class='logo'></a>
-      <a href="https://github.com/DustinHaefele" class='contact-link'><img src="./img/github.svg" alt="github-logo" class='logo'></div></a>
-    </div>
-
-  </section>
-
+  <div class ='row'>
+    <section class="category _50" id ="skills-section" role="region">
+      <div class ="row">
+        <h2 class = "section-title">Things I can help with</h2>
+      </div>
+      <div class ="row">
+        <img src="./img/html.svg" alt="Me and my pup" class ="logo">
+        <img src="./img/css3.svg" alt="Me and my pup" class ="logo">
+        <img src="./img/js.svg" alt="Me and my pup" class ="logo">
+        <img src="./img/jquery.svg" alt="Me and my pup" class ="logo">
+        <img src="./img/github.svg" alt="Me and my pup" class ="logo">
+      </div>
+    </section>
+    
+    
+    <section class="category _50" id = 'contact-me-section' role="region">
+      <div class='column'> 
+        <ul class='contact-list'>
+          <li class='row center'>
+            <i class="fas fa-mail-bulk main-contact-logo"></i>
+            <h2 id="contact-section-title">Contact Me</h2>
+          </li>
+          <li class='row center'>
+            <a href="#" class='contact-link'>
+              <i class="fas fa-map-marked contact-logo"></i>
+              <span>Athens, GA</span>
+            </a>
+          </li>
+          <li class='row center'>
+            <a href="#" class='contact-link'>
+              <i class="far fa-paper-plane contact-logo"></i>
+              <span>Dustin.Haefele@gmail.com</span>
+            </a>
+          </li>
+        </ul> 
+      </div>
+      <div class= row>
+        <a href="https://www.linkedin.com/in/dustin-haefele-1921b474/" class='contact-link'><img src="./img/linkdin.svg" alt="linkdin-logo" class='link-logo logo'></a>
+        <a href="https://github.com/DustinHaefele" class='contact-link'><img src="./img/github.svg" alt="github-logo" class='git-logo logo'></div></a>
+      </div>
+    </section>
+  </div>
   <footer role='content-info'>Built by Dustin Haefele.</footer>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="./index.js"></script>
