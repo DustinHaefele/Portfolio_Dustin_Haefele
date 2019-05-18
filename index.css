@@ -6,11 +6,13 @@
   line-height: 1.5;
 }
 
-
+/* General */
 
 body{
   text-align: center;
 }
+
+/* Navigation */
 
 nav{
   height: 35px;
@@ -27,6 +29,8 @@ nav{
 #menu{
   display: inline-block;
 }
+
+/* Hero */
 
 header {
   min-height: 250px;
@@ -63,85 +67,111 @@ h1 {
   font-size: 16px;
   font-family: 'Oleo Script', cursive;
 }
-
+/* Section General */
 section {
   min-height: 250px;
   margin: 5% 2%;
   padding: 4% 0;
   background-color: #ffffff;/* #E0FBFC; */
   border: 1px groove rgba(165, 255, 214,.5);
-  box-shadow: 0 5px 20px rgba(165, 255, 214, .39);
+  box-shadow: 0 5px 20px rgba(165, 255, 214, .4);
 
 }
 
-#about-me {
-  width:94%;
-  margin-left: 3%;
+.section-title {
+  margin: 8px 0;
+  font-size:24px;
+  padding: 5px 5px;
+  font-family: 'graduate', cursive;
 }
+
+/* FlexBox CSS */
 
 .row {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  height: 100px;
-  align-content: center;
-}
-
-.center-row {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  max-height: 400px;
   align-content: center;
 }
 
 .column {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-content: space-around;
-}
-
-.project-column {
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-content: space-around;
 }
 
-.project-title{
-  margin: 10px 0;
-}
-
-.project-description {
-  width: 300px;
-  height: auto;
-  /* border: 1px solid black; */
-  background-color: white;
-}
-
-#project-section .short-row{
+.center {
   display: flex;
   flex-flow: row wrap;
-  height:40px;
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
 }
 
+.between {
+  justify-content: space-between;
+}
+
+/* About me section */
+
+#about-me {
+  width:94%;
+  margin-left: 3%;
+}
+
+/* Project Section */
+
+.project {
+  border-top: 1px solid rgba(255,166,158);
+  border-bottom: rgba(255,166,158) 1px solid;
+}
+
+.project-title{
+  margin: 3px 0 3px 5px;
+  justify-content: flex-start;
+}
+
+.project-screenshot {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0%;
+}
+
 .project-button {
+  margin: 8px;
   padding: 3px 5px;
-  border: 1px solid black;
-  background-color: #EE6C4D;
+  border: 1px solid rgba(255,166,158);
+  box-shadow: 0 0 20px rgba(255, 166, 158, .4);
+  background-color: white;
   border-radius: 20%;
 }
+
+.project-button:hover {
+  margin: 8px;
+  padding: 3px 5px;
+  border: 1px solid rgba(165, 255, 214);
+  box-shadow: 0 0 20px rgba(165, 255, 214, .4);
+  background-color: white;
+  border-radius: 20%;
+}
+
+
 
 button:hover {
   cursor: pointer;
 }
 
+/* Skills Section */
+
 .logo{
   width: 50px; 
   height: 50px;
+  margin: 10px 20px;
 }
+
+/* Contact Section */
 
 .main-contact-logo {
   margin:5px 8px;
@@ -166,25 +196,12 @@ button:hover {
 }
 
 .contact-logo{
-  padding: 0 3px 0 0;
-}
-
-.section-title {
-  margin: 10px 0;
-  font-size:24px;
-  padding: 5px 5px;
-}
-
-.project-screenshot {
-  width: 300px;
-  height:auto;
-  border-radius: 5%;
-
+  padding-right: 3px;
 }
 
  section:nth-of-type(even) {
   border: 1px groove rgba(255,166,158,.5);
-  box-shadow: 0 5px 20px rgba(255, 166, 158, .39);
+  box-shadow: 0 5px 20px rgba(255, 166, 158, .4);
   color: black;
 } 
 

@@ -11,7 +11,12 @@
   <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-  <nav role='navigation'>Nav <div id='menu'>&#9776;</div></nav>
+  <nav role='navigation'>Nav <div id='menu'>&#9776;</div>
+  <div class='nav-drop'>
+    <ul>
+
+    </ul>
+  </div></nav>
   <header role='banner' class='hero'>
     <h1>Dustin Haefele:</h1>
     <h2 class='subtitle'>Former Chemical Engineer, </br>Current Web Developer.</h2>
@@ -20,7 +25,7 @@
       do them so well that people can't take their eyes off of you." </br>-Maya Angelou</p></div>
   </header>
 
-  <section class="category" role="region">
+  <section id = 'about-me-section' class="category" role="region">
     <h2 class="section-title">ABOUT ME</h2>
 
     <p id="about-me">Hey, I’m Dustin, an aspiring web developer currently based in Athens, Georgia.  
@@ -28,12 +33,13 @@
       good puns, and Dvorak keyboards. </br></br>
 
         In my first life, I graduated from the University of Nebraska with a BS in Chemical Engineering 
-        and used it to make manufacturing plants more efficient for six years.  In my final two years of helping plants make wood floors and mayonnaise efficiently, 
+        and used it to make manufacturing plants more efficient for six years.  
+        In my final two years of helping plants make wood floors and mayonnaise efficiently, 
         I found my love for programming.  </br></br>
         
-        I started solving some of our problems with basic PLC programming.  After that, I talked my boss into letting me 
+        I started solving some of the problems at the plant with basic PLC programming.  After that, I talked my boss into letting me 
         learn how to program our 15-foot tall material handling robot.  I wrote some new robotics programs to help the maintenance 
-        department, and of course, “taught” it how to dance.  </br></br>
+        department, and of course, I taught it how to dance.  </br></br>
         
         When I saw a chance to make work more than just a paycheck I had to do something about it. I loved the programming 
         I was doing so much that I decided to make a leap and enroll in a Fullstack Development program through Thinkful.  
@@ -44,26 +50,31 @@
   </section>
  
   <!-- Need to learn how to do a side scrolling section. -->
-  <section class="category" id="project-section" role="region">
-      <h2 class = "section-title">PROJECTS</h2>
-      <div class="project-column">
-        <h3 class ="project-title">Bookmark App</h3>
-        <div>
-        <img src ="./img/bookmark-screen-shot.png" class='project-screenshot'></div>
-      </div>
-      <div class="short-row">
-        <a href="#" class="project-live"><button class='project-button'>Live App</button></a>
-        <a href="#" class="project-code"><button class='project-button'>See Code</button></a>
-      </div>
-      <div class = row>
-        <div class="project-description">
-          <p>One place to store, rate and describe all your bookmarks!</p>
+  <section class="category column" id="project-section" role="region">
+     
+        <div class = 'row'>
+          <h2 class = "section-title">PROJECTS</h2>
+        </div>
+        <div class="project">
+        <div class = 'row project-title'>
+          <h3 class ="project-title">Your Bookmark Closet</h3>
+        </div>
+        <div class ='row img'>
+          <img src ="./img/bookmark-screen-shot.png" class='project-screenshot'>
+        </div>
+        <div class="row between">
+          <a href="#" class="project-live"><button class='project-button'>Live App</button></a>
+          <a href="#" class="project-code"><button class='project-button'>See Code</button></a>
+        </div>
+        <div class="row">
+          <p>A bookmark storage app that allows users to save all their bookmarks along with Name, Description and Rating.  
+            The user can also filter the list by a minimum rating.</p>
         </div>
       </div>
   </section>
 
   
-  <section class="category" role="region">
+  <section class="category" id ="skills-section role="region">
     <div class ="row">
       <h2 class = "section-title">Things I can help with</h2>
     </div>
@@ -71,28 +82,30 @@
       <img src="./img/html.svg" alt="Me and my pup" class ="logo">
       <img src="./img/css3.svg" alt="Me and my pup" class ="logo">
       <img src="./img/js.svg" alt="Me and my pup" class ="logo">
-    </div>
-    <div class='row'>
       <img src="./img/jquery.svg" alt="Me and my pup" class ="logo">
       <img src="./img/github.svg" alt="Me and my pup" class ="logo">
-    </div>  
+    </div>
+    <!-- <div class='row'>
+      <img src="./img/jquery.svg" alt="Me and my pup" class ="logo">
+      <img src="./img/github.svg" alt="Me and my pup" class ="logo">
+    </div>   -->
   </section>
   
   
-  <section class="category" role="region">
+  <section class="category" id = 'contact-me-section' role="region">
     <div class='column'> 
       <ul class='contact-list'>
-        <li class=center-row>
+        <li class='row center'>
           <i class="fas fa-mail-bulk main-contact-logo"></i>
           <h2 id="contact-section-title">Contact Me</h2>
         </li>
-        <li class=center-row>
+        <li class='row center'>
           <a href="#" class='contact-link'>
             <i class="fas fa-map-marked contact-logo"></i>
             <span>Athens, GA</span>
           </a>
         </li>
-        <li class=center-row>
+        <li class='row center'>
           <a href="#" class='contact-link'>
             <i class="far fa-paper-plane contact-logo"></i>
             <span>Dustin.Haefele@gmail.com</span>
@@ -107,7 +120,7 @@
 
   </section>
 
-  <footer role='content-info'>FOOTER</footer>
+  <footer role='content-info'>Built by Dustin Haefele.</footer>
 
 
 </body>
