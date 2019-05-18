@@ -168,6 +168,7 @@ section {
 .project-title{
   margin: 3px 0 3px 5px;
   justify-content: flex-start;
+  font-weight: 400;
 }
 
 .project-screenshot {
@@ -195,6 +196,9 @@ section {
   border-radius: 20%;
 }
 
+.project-description {
+  margin-bottom: 8px;
+}
 
 
 button:hover {
