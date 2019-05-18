@@ -34,7 +34,12 @@ nav{
 }
 
 .nav-drop{
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #293241ea;
+  position: fixed;
+  top: 35px;
+  right: 0;
+  left: 0;
+  z-index: 19;
   height: 800px;
 }
 
