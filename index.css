@@ -196,7 +196,8 @@ section:nth-of-type(even) {
 
 .project-button {
   margin: 8px;
-  padding: 10px 20px;
+  font-size: 10px;
+  padding: 5px 10px;
   border: 1px solid rgba(255,166,158);
   box-shadow: 0 0 20px rgba(255, 166, 158, .4);
   background-color: white;
