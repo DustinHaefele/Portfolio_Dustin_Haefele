@@ -196,11 +196,11 @@ section:nth-of-type(even) {
 
 .project-button {
   margin: 8px;
-  padding: 3px 5px;
+  padding: 10px 20px;
   border: 1px solid rgba(255,166,158);
   box-shadow: 0 0 20px rgba(255, 166, 158, .4);
   background-color: white;
-  border-radius: 20%;
+  border-radius: 10px;
 }
 
 .project-button:hover {
