@@ -204,12 +204,9 @@ section:nth-of-type(even) {
 }
 
 .project-button:hover {
-  margin: 8px;
-  padding: 3px 5px;
   border: 1px solid rgba(165, 255, 214);
   box-shadow: 0 0 20px rgba(165, 255, 214, .4);
   background-color: white;
-  border-radius: 20%;
 }
 
 .project-description {
