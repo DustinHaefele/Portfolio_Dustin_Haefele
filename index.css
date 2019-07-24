@@ -73,6 +73,10 @@ nav{
   align-content: center;
 }
 
+#menu-icon:hover {
+  cursor: pointer;
+}
+
 /* Hero */
 
 header {
@@ -299,7 +303,7 @@ footer {
   }
 
   .logo{
-    margin: 25px 50px;
+    margin: 25px 35px;
   }
 
   #about-me {
