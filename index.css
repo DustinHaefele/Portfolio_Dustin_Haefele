@@ -120,7 +120,7 @@ h1 {
 section {
   min-height: 250px;
   margin: 5% 2%;
-  padding: 4% 0;
+  padding:2% 0 4% 0;
   background-color: #ffffff;/* #E0FBFC; */
   /* border: 1px groove rgba(165, 255, 214,.5);
   box-shadow: 0 5px 20px rgba(165, 255, 214, .4); */
